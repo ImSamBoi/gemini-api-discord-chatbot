@@ -191,7 +191,7 @@ async def on_message(message: discord.Message):
 @bot.tree.command(description="The help command which lists out all the basic information and commands for using the bot")
 async def help(interaction: discord.Interaction):
     embed = discord.Embed(color=discord.Color.light_embed(), title="Help")
-    embed.add_field(name="LINKS AND URLS", value="[Youtube Tutorial](https://www.youtube.com/)\n[Official Discord Server](https://discord.gg/4uFYtfpnfP)\n[GeminiAPI Documentation](https://ai.google.dev/gemini-api/docs)\n[Discord.py Documentation](https://discordpy.readthedocs.io/en/stable/)")
+    embed.add_field(name="LINKS AND URLS", value="[Youtube Tutorial](https://www.youtube.com/watch?v=36Ul-ou2WkI)\n[Official Discord Server](https://discord.gg/4uFYtfpnfP)\n[GeminiAPI Documentation](https://ai.google.dev/gemini-api/docs)\n[Discord.py Documentation](https://discordpy.readthedocs.io/en/stable/)")
     embed.add_field(name="HELP COMMANDS", value="**/help**\nShows the list of all commands with useful links and urls.\n**/ping**\nShows the current latency of the bot in ms.\n**/prompt**\nSend a prompt to the AI and get an embedded response, works in any channel.\n**/setchannel**\nSets the channel used for live Ai chat in a server.\n**/removechannel**\nRemoves the channel set for live Ai chat in a server from the database.", inline=False)
     embed.set_footer(text="Still need help? Join our official Discord server at https://discord.gg/4uFYtfpnfP")
     await interaction.response.send_message(embed=embed)
